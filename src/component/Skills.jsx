@@ -1,3 +1,4 @@
+import { DiFirebase } from "react-icons/di";
 import { FaPython, FaJava, FaReact, FaDatabase, FaAws } from "react-icons/fa";
 import { SiSpringboot, SiTailwindcss, SiGit, SiJavascript } from "react-icons/si";
 
@@ -41,6 +42,10 @@ const Skills = ({ theme }) => (
       <div className="flex flex-col items-center">
         <SiJavascript className="text-4xl text-[#f7df1e]" />
         <span className="mt-2 text-sm">JavaScript</span>
+      </div>
+      <div className="flex flex-col items-center">
+        <DiFirebase className="text-4xl text-[#ffca28]" />
+        <span className="mt-2 text-sm">Firebase</span>
       </div>
       {/* Add/remove icons and skills as you like! */}
     </div>
