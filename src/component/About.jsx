@@ -64,14 +64,14 @@ const About = ({ theme }) => (
       <div className="flex-1 mb-4 md:mb-0">
         <h3 className={`text-4xl font-bold mb-3 ${theme.accent}`}>About Me</h3>
         <p className={theme.text}>
-          Software Engineer passionate about building scalable fullstack systems. <br />
-          I have a strong foundation in computer science, with a BSc in Computer Science <br />
-          I enjoy solving problems, collaborating with diverse teams, and continuously learning to stay at the edge of technology.
+          Software Engineer passionate about system designs. <br />
+          Strong foundation in computer science, with a <b>BSc in Computer Science</b> <br />
+          Enjoy solving problems, collaborating with diverse teams, and continuously learning to stay at the edge of technology.
         </p>
         <div className={`flex mt-4 space-x-7 items-center justify-center ${theme.text}`}>
-          <span className="flex items-center text-md"><span className="mr-1">📍</span> Atlanta, GA</span>
-          <span className="flex items-center text-md"><span className="mr-1">🗣️</span> English, French</span>
-          <span className="flex items-center text-md"><span className="mr-1">💡</span> Music (Piano), Chess Player, Adventure lover, Reader</span>
+          <span className="flex items-center text-md"><span className="mr-1">📍</span><i>Atlanta, GA</i></span>
+          <span className="flex items-center text-md"><span className="mr-1">🗣️</span><i>English, French</i></span>
+          <span className="flex items-center text-md"><span className="mr-1">💡</span><i>Music-Piano, Chess Player, Adventure lover, Reader</i></span>
         </div>
       </div>
     </section>
