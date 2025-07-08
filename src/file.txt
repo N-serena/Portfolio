@@ -1,0 +1,46 @@
+<section id="skills" className="mx-4 md:mx-16 mb-12">
+        <h3 className={`text-2xl font-bold mb-6 ${theme.accent}`}>Tech Stack & Skills</h3>
+        <ul className="list-disc pl-6 text-lg space-y-2">
+          <li>Python (Pandas, Scikit-learn, TensorFlow, Flask)</li>
+          <li>Java (Spring Boot, REST APIs)</li>
+          <li>JavaScript (React.js, Node.js)</li>
+          <li>SQL (PostgreSQL, MySQL)</li>
+          <li>AWS Cloud Services</li>
+          <li>Git & GitHub</li>
+          <li>Linux/Unix Environments</li>
+          {/* Add or tailor for your real stack */}
+        </ul>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="mx-4 md:mx-16 mb-12">
+        <h3 className={`text-2xl font-bold mb-6 ${theme.accent}`}>Tech Stack & Skills</h3>
+        <div className="flex flex-wrap gap-4">
+          <span className="px-4 py-2 bg-[#7864fa22] text-[#7864fa] rounded-lg font-semibold">Python</span>
+          <span className="px-4 py-2 bg-[#4cc9f022] text-[#4cc9f0] rounded-lg font-semibold">Java</span>
+          <span className="px-4 py-2 bg-[#22223b11] text-[#22223b] rounded-lg font-semibold">Spring Boot</span>
+          <span className="px-4 py-2 bg-[#7864fa22] text-[#7864fa] rounded-lg font-semibold">React</span>
+          <span className="px-4 py-2 bg-[#4cc9f022] text-[#4cc9f0] rounded-lg font-semibold">SQL</span>
+          <span className="px-4 py-2 bg-[#22223b11] text-[#22223b] rounded-lg font-semibold">AWS</span>
+          {/* Add more skills */}
+        </div>
+      </section> 
+
+            {/* Contact Section */}
+      <section id="contact" className={`${theme.card} ${theme.shadow} rounded-2xl mx-4 md:mx-16 mb-12 p-8`}>
+        <h3 className={`text-2xl font-bold mb-3 ${theme.accent}`}>Get in Touch</h3>
+        <p className={theme.text + " mb-4"}>
+          I'm open to collaborations, opportunities, and friendly chats! Reach out via the form below or connect with me on LinkedIn.
+        </p>
+        <form className="flex flex-col gap-4 max-w-md">
+          <input type="text" placeholder="Your Name" className="rounded-md p-2 border border-gray-200" />
+          <input type="email" placeholder="Your Email" className="rounded-md p-2 border border-gray-200" />
+          <textarea placeholder="Your Message" className="rounded-md p-2 border border-gray-200" rows="4"></textarea>
+          <button type="submit" className="self-start px-6 py-2 bg-[#7864fa] text-white rounded-md hover:bg-[#4cc9f0] transition">Send</button>
+        </form>
+        <div className="mt-6 flex gap-4">
+          <a href="mailto:serena@email.com" className={theme.accent + " underline"}>serena@email.com</a>
+          <a href="https://linkedin.com/" target="_blank" className={theme.accent + " underline"} rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" className={theme.accent + " underline"} rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
