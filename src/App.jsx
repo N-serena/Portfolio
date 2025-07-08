@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import ContactSection from "./component/ContactSection";
 import Certifications from "./component/Certifications";
 import Skills from "./component/Skills";
@@ -40,6 +41,7 @@ function App() {
       <Skills theme={theme} />
       <ContactSection theme={theme} />
       <Footer theme={theme} />
+      <Analytics />
 
       <div className="h-8"></div>
 

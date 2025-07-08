@@ -20,8 +20,8 @@ const projects = [
   },
   {
     title: "FinHub",
-    description: "A full-featured ecommerce platform with payment integration.",
-    stack: ["Spring Boot", "React", "MySQL"],
+    description: "A fullstack platform designed to securely aggregate and analyze users’ bank data.",
+    stack: ["Spring Boot", "React", "MySQL", "Plaid API"],
     link: "#"
   },
   {
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     title: "Spotify Clone",
-    description: "A web application replicating Spotify's core features using React Native and Node.js.",
+    description: "An android mobile application replicating Spotify's core features using React Native and Node.js.",
     stack: ["React Native", "Firebase", "Node.js", "Spotify API"],
     link: "https://github.com/SP27-Blue-Spotify/SP27-Blue-Spotify-Rep",
     image: spotify2
@@ -64,7 +64,7 @@ const Projects = ({ theme }) => (
               />
             ) : (
               <span className="text-3xl">
-                {idx === 0 ? "📱" : idx === 1 ? "📈" : "🛡️"}
+                {idx === 0 ? "🛡️" : idx === 1 ? "📱" : "📈"}
               </span>
             )}
           </div>
