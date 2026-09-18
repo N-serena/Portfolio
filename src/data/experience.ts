@@ -15,21 +15,35 @@ import type { Experience } from './types'
 */
 
 export const experience: Experience[] = [
-  // Uncomment and fill in to add your latest role.
-  // {
-  //   role: 'Software Engineer',
-  //   company: 'Company name',
-  //   period: 'Jan 2026 — Present',
-  //   highlights: ['What you built, and what changed because of it.'],
-  // },
+  //Uncomment and fill in to add your latest role.
+  {
+    role: 'Software Engineer Intern',
+    company: 'Netflix',
+    period: 'May 2026 - Aug 2026',
+    highlights: [
+        'Designed and implemented a safety-critical failure injection architecture for Netflix\'s internal API gateway, enabling 2+ engineer teams to safely simulate dependency outages on a scoped slice of production traffic',
+        'Built a full-stack continuous health-probing system end-to-end in Spring Boot, React, and gRPC with a shared protobuf contract, enabling cross-team engineers to analyze and visualize synthetic traffic sessions against production gateways on a unified dashboard measuring 100% traffic latency, status, and proxy health signals.',
+        'Engineered the concurrent request-dispatch and scheduling core of the system using Java virtual threads and in-memory connection pooling to fire ~150req/s of synthetic HTTP traffic',
+        'Designed the reconciliation-loop architecture that reduced data store reads and latency by 33.3%'
+    ],
+  },
+  {
+    role: 'Undergraduate Researcher',
+    company: 'KSU',
+    period: 'Oct 2024 — May 2025',
+    highlights: [        
+        'Crafted & executed adversarial attacks (MIFGSM, FGSM) on deep learning models using the MNIST dataset, executing 40+ attack iterations, applying threat modeling techniques to assess model robustness and uncover key vulnerabilities',
+        'Conducted cross-model evaluation across 4+ architectures, analyzing 5,000+ misclassified samples, visualizing error patterns, and improved model robustness by 80%',
+        'Delivered research findings at the Annual KSU Symposium, effectively translating complex technical concepts into accessible insights for an audience of 50+ faculty, researchers, and peers.'
+    ],
+  },
   {
     role: 'Software Engineer Intern',
     company: 'Afriland First Bank',
-    period: 'Jun 2023 — Aug 2023',
-    highlights: [
-      'Engineered a secure authentication system using OAuth2, JWT and 2FA for a banking app, meeting banking compliance requirements and reducing unauthorized access attempts by 40%.',
-      'Deployed AWS EC2 and S3 infrastructure with Jenkins CI/CD pipelines alongside cross-functional teams, increasing delivery speed by 30%.',
-      'Supported deployment and scaling of a containerized banking app on Kubernetes, holding 99.9% uptime for 10,000+ concurrent users.',
+    period: 'Jun 2023 - Aug 2023',
+    highlights: [      
+        'Performed threat modeling using the STRIDE methodology to identify and prioritize system vulnerabilities, resulting in the mitigation of 15+ high-priority security risks before deployment.',
+        'Engineered a secure authentication system using OAuth2, JWT, and 2FA in Java for a banking app, achieving 100% compliance with banking regulations and reducing unauthorized access attempts by 70%..',
     ],
   },
   {

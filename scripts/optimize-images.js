@@ -17,6 +17,9 @@ const SOURCE_ROOT = 'assets-source'
 const OUTPUT_ROOT = 'src/assets'
 const MAX_WIDTH = 1280
 const QUALITY = 78
+/* Per-file caps for images that never render near MAX_WIDTH. The portrait is
+   the LCP element, so shipping it oversized costs real time on mobile. */
+const WIDTH_OVERRIDES = { 'profile.jpg': 560 }
 const INPUT_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png'])
 
 const force = process.argv.includes('--force')
@@ -73,9 +76,10 @@ async function main() {
     }
 
     await mkdir(path.dirname(output), { recursive: true })
+    const width = WIDTH_OVERRIDES[path.basename(source)] ?? MAX_WIDTH
     const buffer = await sharp(source)
       .rotate()
-      .resize({ width: MAX_WIDTH, withoutEnlargement: true })
+      .resize({ width, withoutEnlargement: true })
       .webp({ quality: QUALITY })
       .toBuffer()
     await writeFile(output, buffer)

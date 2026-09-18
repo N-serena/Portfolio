@@ -1,7 +1,11 @@
 import type { Profile } from './types'
 
 /* Edit this file to update the hero and about section.
-   Nothing here is referenced by class name or index — reorder freely. */
+   Nothing here is referenced by class name or index — reorder freely.
+
+   HEADS UP: name, role, location and statement are also baked into the share
+   card at public/og.png. After changing any of them, run `npm run og` or the
+   LinkedIn preview will keep showing the old text. */
 
 export const profile: Profile = {
   name: 'Serena Noboudem',

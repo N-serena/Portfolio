@@ -2,15 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link type="image/png" rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Absolute URLs are required by LinkedIn, Slack and X — relative ones are
+         ignored. Update all four occurrences if the domain changes. -->
+    <link rel="canonical" href="https://serena-portfolio.vercel.app/" />
+
+    <title>Serena Noboudem — Software Engineer</title>
+    <meta
+      name="description"
+      content="Serena Noboudem is a software engineer in Atlanta, GA building scalable systems across AI/ML and cloud. Portfolio, experience and projects."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Serena Noboudem" />
+    <meta property="og:url" content="https://serena-portfolio.vercel.app/" />
+    <meta property="og:title" content="Serena Noboudem — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Building scalable systems across AI/ML and cloud. Portfolio, experience and projects."
+    />
+    <meta property="og:image" content="https://serena-portfolio.vercel.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Serena Noboudem, software engineer — I build scalable systems across AI/ML and cloud."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Serena Noboudem — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Building scalable systems across AI/ML and cloud. Portfolio, experience and projects."
+    />
+    <meta name="twitter:image" content="https://serena-portfolio.vercel.app/og.png" />
+
+    <link type="image/png" rel="icon" href="/favicon.png" />
+    <meta name="theme-color" content="#fcfbfa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d0c0b" media="(prefers-color-scheme: dark)" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Loaded async: the media swap drops it out of the render-blocking path.
+         The metric-matched @font-face fallbacks make the swap shift-free. -->
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..600&display=swap"
+      onload="this.rel='stylesheet'"
     />
-    <title>Serena's Portfolio</title>
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..600&display=swap"
+      />
+    </noscript>
+
     <script>
       // Applies the theme before first paint so the page never flashes the wrong one.
       try {
