@@ -15,14 +15,13 @@ import type { Experience } from './types'
 */
 
 export const experience: Experience[] = [
-  {
-    role: 'TODO — your current or most recent role',
-    company: 'TODO — company',
-    period: 'TODO — e.g. Jan 2026 — Present',
-    highlights: [
-      'Replace this entry with your latest role. Delete it if there is nothing newer than the two below.',
-    ],
-  },
+  // Uncomment and fill in to add your latest role.
+  // {
+  //   role: 'Software Engineer',
+  //   company: 'Company name',
+  //   period: 'Jan 2026 — Present',
+  //   highlights: ['What you built, and what changed because of it.'],
+  // },
   {
     role: 'Software Engineer Intern',
     company: 'Afriland First Bank',

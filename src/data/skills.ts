@@ -7,7 +7,7 @@ import type { SkillGroup } from './types'
 export const skillGroups: SkillGroup[] = [
   {
     label: 'Languages',
-    items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'Kotlin', 'SQL'],
+    items: ['Python', 'Java', 'Go', 'JavaScript', 'TypeScript', 'Kotlin', 'SQL'],
   },
   {
     label: 'Frameworks',
@@ -18,7 +18,11 @@ export const skillGroups: SkillGroup[] = [
     items: ['Pandas', 'Scikit-learn', 'TensorFlow'],
   },
   {
-    label: 'Cloud & tooling',
-    items: ['AWS', 'Docker', 'Kubernetes', 'Jenkins', 'Git', 'Firebase', 'Postman', 'JUnit 5'],
+    label: 'Systems',
+    items: ['Authn/Authz', 'TCP/IP'],
+  },
+  {
+    label: 'Tooling',
+    items: ['Docker', 'Jenkins', 'Git', 'Firebase', 'Postman', 'JUnit 5'],
   },
 ]

@@ -1,14 +1,16 @@
 import type { Project } from './types'
 
-import dns from '../assets/dns.jpg'
-import dsml from '../assets/dsml.jpg'
-import mobile from '../assets/mobile.jpg'
-import spotify from '../assets/spotify2.jpg'
-import supplyChain from '../assets/supply_chain.jpg'
+import dns from '../assets/projects/dns.webp'
+import dsml from '../assets/projects/dsml.webp'
+import mobile from '../assets/projects/mobile.webp'
+import spotify from '../assets/projects/spotify2.webp'
+import supplyChain from '../assets/projects/supply_chain.webp'
 
 /* To add a project:
-     1. drop the image in src/assets/ and import it at the top of this file
-     2. copy the block below into the array and edit it
+     1. drop the original image in assets-source/projects/
+     2. run `npm run images` — it writes an optimized .webp into src/assets/projects/
+     3. import that .webp at the top of this file
+     4. copy the block below into the array and edit it
 
    Only title, description and stack are required. The grid handles any number
    of projects, and `featured` gives one a wider tile.
@@ -25,13 +27,13 @@ import supplyChain from '../assets/supply_chain.jpg'
 */
 
 export const projects: Project[] = [
-  {
-    title: 'TODO — your newest project',
-    description:
-      'Replace this entry. Only title, description and stack are required; everything else is optional.',
-    stack: ['TODO'],
-    featured: true,
-  },
+  // Uncomment and fill in to add a project.
+  // {
+  //   title: 'Project name',
+  //   description: 'One or two sentences on what it does and what was hard.',
+  //   stack: ['TypeScript', 'Postgres'],
+  //   featured: true,
+  // },
   {
     title: 'FinHub',
     description:

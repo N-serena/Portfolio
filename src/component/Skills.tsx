@@ -1,10 +1,13 @@
 import { skillGroups } from '../data/skills'
+import SectionHeading from './SectionHeading'
 
 const Skills = () => (
   <section id="skills" className="mx-auto max-w-5xl px-6 py-20">
-    <h2 className="text-ink-subtle text-eyebrow uppercase">Skills</h2>
+    <SectionHeading>Skills</SectionHeading>
 
-    <dl className="border-rule mt-8 grid gap-10 border-t pt-10 sm:grid-cols-2 lg:grid-cols-4">
+    {/* auto-fit rather than a fixed count, so adding or removing a group
+        re-flows instead of stranding one on its own row. */}
+    <dl className="border-rule mt-8 grid gap-10 border-t pt-10 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]">
       {skillGroups.map((group) => (
         <div key={group.label}>
           <dt className="text-ink font-display text-lg">{group.label}</dt>

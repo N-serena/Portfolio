@@ -1,6 +1,7 @@
 import { FiArrowUpRight } from 'react-icons/fi'
 import { projects } from '../data/projects'
 import type { Project } from '../data/types'
+import SectionHeading from './SectionHeading'
 
 function ProjectCard({ project }: { project: Project }) {
   const Wrapper = project.link ? 'a' : 'div'
@@ -66,7 +67,7 @@ function ProjectCard({ project }: { project: Project }) {
 
 const Projects = () => (
   <section id="projects" className="mx-auto max-w-5xl px-6 py-20">
-    <h2 className="text-ink-subtle text-eyebrow uppercase">Projects</h2>
+    <SectionHeading>Projects</SectionHeading>
 
     {/* grid-flow-dense lets narrow tiles backfill the gaps a featured tile leaves,
         so the grid stays balanced at any number of projects. */}

@@ -11,7 +11,10 @@ export type SocialLink = {
 export type Profile = {
   name: string
   role: string
-  /** One or two sentences. Shown directly under the name. */
+  /** The large second display line in the hero. Keep it short and concrete —
+      it is set at the same size as the name, so vague phrasing shows. */
+  statement: string
+  /** Smaller supporting sentence under the statement. */
   summary: string
   location: string
   languages: string

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { ValidationError, useForm } from '@formspree/react'
 import { profile } from '../data/profile'
+import SectionHeading from './SectionHeading'
 
 const FORMSPREE_ID = 'mblyybwz'
 
@@ -19,7 +20,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="mx-auto max-w-5xl px-6 py-20">
-      <h2 className="text-ink-subtle text-eyebrow uppercase">Contact</h2>
+      <SectionHeading>Contact</SectionHeading>
 
       <div className="border-rule mt-8 grid gap-12 border-t pt-10 md:grid-cols-[1.1fr_1fr]">
         <div>

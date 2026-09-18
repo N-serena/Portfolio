@@ -1,8 +1,9 @@
 import { experience } from '../data/experience'
+import SectionHeading from './SectionHeading'
 
 const Experience = () => (
   <section id="experience" className="mx-auto max-w-5xl px-6 py-20">
-    <h2 className="text-ink-subtle text-eyebrow uppercase">Experience</h2>
+    <SectionHeading>Experience</SectionHeading>
 
     <ol className="border-rule mt-8 border-t">
       {experience.map((role) => (

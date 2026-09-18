@@ -1,9 +1,10 @@
 import { FiArrowUpRight } from 'react-icons/fi'
 import { certifications } from '../data/certifications'
+import SectionHeading from './SectionHeading'
 
 const Certifications = () => (
   <section id="certifications" className="mx-auto max-w-5xl px-6 py-20">
-    <h2 className="text-ink-subtle text-eyebrow uppercase">Certifications</h2>
+    <SectionHeading>Certifications</SectionHeading>
 
     <ul className="border-rule mt-8 border-t">
       {certifications.map((cert) => {

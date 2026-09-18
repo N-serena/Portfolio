@@ -1,4 +1,4 @@
-import profileImage from '../assets/profile.jpg'
+import profileImage from '../assets/profile.webp'
 import { profile } from '../data/profile'
 
 const Hero = () => (
@@ -8,11 +8,16 @@ const Hero = () => (
   >
     <div className="flex flex-col-reverse items-start gap-12 md:flex-row md:items-center md:justify-between">
       <div className="max-w-xl">
-        <p className="text-ink-subtle text-eyebrow uppercase">Software Engineer</p>
+        <p className="text-ink-subtle text-eyebrow uppercase">
+          {profile.role} · {profile.location}
+        </p>
 
-        <h1 className="text-ink font-display text-display mt-5">{profile.name}</h1>
+        <h1 className="font-display text-display mt-5">
+          <span className="text-ink block">{profile.name}</span>
+          <span className="text-ink-muted mt-1 block text-balance">{profile.statement}</span>
+        </h1>
 
-        <p className="text-ink-muted mt-6 text-lg leading-relaxed">{profile.summary}</p>
+        <p className="text-ink-muted mt-7 max-w-md leading-relaxed">{profile.summary}</p>
 
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
           {profile.socials.map((social) => (
@@ -42,6 +47,8 @@ const Hero = () => (
       <img
         src={profileImage}
         alt={profile.name}
+        fetchPriority="high"
+        decoding="async"
         width={224}
         height={280}
         className="border-rule h-56 w-44 shrink-0 rounded-sm border object-cover md:h-72 md:w-56"

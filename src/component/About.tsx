@@ -1,4 +1,5 @@
 import { profile } from '../data/profile'
+import SectionHeading from './SectionHeading'
 
 const facts = [
   { label: 'Based in', value: profile.location },
@@ -8,7 +9,7 @@ const facts = [
 
 const About = () => (
   <section id="about" className="mx-auto max-w-5xl px-6 py-20">
-    <h2 className="text-ink-subtle text-eyebrow uppercase">About</h2>
+    <SectionHeading>About</SectionHeading>
 
     <div className="border-rule mt-8 grid gap-12 border-t pt-10 md:grid-cols-[1.4fr_1fr]">
       <p className="text-ink font-display text-title">
