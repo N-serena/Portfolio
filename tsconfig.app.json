@@ -13,11 +13,6 @@
     "noEmit": true,
     "skipLibCheck": true,
 
-    // Temporary: lets the remaining .jsx components resolve while they are
-    // rewritten as .tsx. Remove once src/ contains no .jsx files.
-    "allowJs": true,
-    "checkJs": false,
-
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
