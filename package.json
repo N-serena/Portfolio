@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc -b"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
@@ -29,6 +30,8 @@
     "globals": "^16.0.0",
     "postcss": "^8.5.4",
     "tailwindcss": "^4.1.8",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
     "vite": "^6.3.5"
   }
 }

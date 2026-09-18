@@ -40,7 +40,7 @@ function App() {
       <Projects theme={theme} />
       <Skills theme={theme} />
       <ContactSection theme={theme} />
-      <Footer theme={theme} />
+      <Footer />
       <Analytics />
 
       <div className="h-8"></div>

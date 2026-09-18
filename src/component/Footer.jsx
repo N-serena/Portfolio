@@ -1,6 +1,6 @@
 import { FaArrowUp } from "react-icons/fa";
 
-const Footer = ({ theme }) => (
+const Footer = () => (
    <footer className="mt-10 mb-4 text-center text-sm text-gray-400"> 
     <span>© 2025 Serena Noboudem | Made with ❤️</span>
     <div className="mt-2">
