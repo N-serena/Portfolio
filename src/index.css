@@ -1,5 +1,127 @@
 @import "tailwindcss";
-html, body, #root {
+
+/* Tailwind v4 keys `dark:` to prefers-color-scheme by default, which is why the
+   existing dark: variants never fired. Key it to a class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Semantic tokens. Components never reference a raw colour — they use the
+   utilities generated from these, and the values swap under .dark. */
+:root {
+  --paper: #fcfbfa;
+  --paper-raised: #ffffff;
+  --paper-sunken: #f4f3f0;
+
+  --ink: #1c1a17;
+  --ink-muted: #56514b;
+  --ink-subtle: #6b665f;
+
+  --rule: #ddd9d3;
+  --rule-strong: #d3cfc9;
+
+  --accent: #4f46c9;
+  --accent-hover: #3d35a8;
+  --accent-on: #ffffff;
+  --accent-wash: #eeedfb;
+
+  --type-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --type-display: "Instrument Serif", ui-serif, Georgia, "Times New Roman", serif;
+  --type-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas,
+    "Liberation Mono", monospace;
+
+  color-scheme: light;
+}
+
+.dark {
+  --paper: #0d0c0b;
+  --paper-raised: #171614;
+  --paper-sunken: #201e1b;
+
+  --ink: #f5f3f0;
+  --ink-muted: #a8a29a;
+  --ink-subtle: #928c83;
+
+  --rule: #2b2825;
+  --rule-strong: #3f3a35;
+
+  --accent: #a5a0f5;
+  --accent-hover: #bfbbf9;
+  --accent-on: #14121f;
+  --accent-wash: #1d1a30;
+
+  color-scheme: dark;
+}
+
+/* `inline` keeps the var() reference in the generated utility, so bg-paper
+   resolves at use time and follows .dark without any dark: variant. */
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-paper-sunken: var(--paper-sunken);
+
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-subtle: var(--ink-subtle);
+
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-on: var(--accent-on);
+  --color-accent-wash: var(--accent-wash);
+
+  --font-sans: var(--type-sans);
+  --font-display: var(--type-display);
+  --font-mono: var(--type-mono);
+
+  --text-display: clamp(2.75rem, 7vw, 5rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.015em;
+  --text-title: clamp(1.75rem, 3.5vw, 2.5rem);
+  --text-title--line-height: 1.15;
+  --text-title--letter-spacing: -0.01em;
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.12em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--type-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+html,
+body,
+#root {
   height: 100%;
 }
 
