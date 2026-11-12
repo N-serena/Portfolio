@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from 'react-icons/fi'
 import { experience } from '../data/experience'
 import SectionHeading from './SectionHeading'
 
@@ -29,6 +30,24 @@ const Experience = () => (
                 role.company
               )}
             </p>
+
+            {role.links && role.links.length > 0 && (
+              <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1">
+                {role.links.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-ink-muted decoration-rule-strong hover:text-accent hover:decoration-accent inline-flex items-center gap-1 text-sm underline underline-offset-4 transition-colors"
+                    >
+                      {link.label}
+                      <FiArrowUpRight aria-hidden size={13} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
 
             <ul className="mt-5 flex flex-col gap-3">
               {role.highlights.map((highlight) => (

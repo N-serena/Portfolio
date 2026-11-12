@@ -24,6 +24,12 @@ export type Profile = {
   socials: SocialLink[]
 }
 
+/** A named link to supporting material — a report, poster, paper, write-up. */
+export type ResourceLink = {
+  label: string
+  href: string
+}
+
 export type Experience = {
   role: string
   company: string
@@ -31,6 +37,8 @@ export type Experience = {
   period: string
   highlights: string[]
   companyHref?: string
+  /** Rendered as a row of links under the company name. */
+  links?: ResourceLink[]
 }
 
 export type Project = {

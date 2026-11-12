@@ -31,6 +31,12 @@ export const experience: Experience[] = [
     role: 'Graduate Researcher',
     company: 'Boston University, GRS',
     period: 'Jan 2026 — May 2026',
+    links: [
+      {
+        label: 'Report',
+        href: 'https://drive.google.com/file/d/10kheqfQ1ivswZk7o8-Y5XhMmK8RImwnp/view?usp=drive_link',
+      },
+    ],
     highlights: [
       'Designed an autonomous evolutionary pipeline that created and optimized visual jailbreak attacks against multimodal LLMs, outperforming hand-crafted baselines with a self-improving system.',
       'Applied a MAP-Elites strategy to drive in-context optimization across 90+ unattended rounds and thousands of model inferences.',
@@ -41,6 +47,16 @@ export const experience: Experience[] = [
     role: 'Research Assistant',
     company: 'KSU — College of Computing',
     period: 'Oct 2024 — May 2025',
+    links: [
+      {
+        label: 'Abstract',
+        href: 'https://digitalcommons.kennesaw.edu/undergradsymposiumksu/spring2025/spring2025/314/',
+      },
+      {
+        label: 'Poster',
+        href: 'https://drive.google.com/file/d/13FBQeoEwlc6Qz38IhNezNK6zvWD3kix_/view?usp=sharing',
+      },
+    ],
     highlights: [        
         'Crafted & executed adversarial attacks (MIFGSM, FGSM) on deep learning models using the MNIST dataset, executing 40+ attack iterations, applying threat modeling techniques to assess model robustness and uncover key vulnerabilities',
         'Conducted cross-model evaluation across 4+ architectures, analyzing 5,000+ misclassified samples, visualizing error patterns, and improved model robustness by 80%',
