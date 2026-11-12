@@ -7,22 +7,22 @@ import type { SkillGroup } from './types'
 export const skillGroups: SkillGroup[] = [
   {
     label: 'Languages',
-    items: ['Python', 'Java', 'Go', 'JavaScript', 'TypeScript', 'Kotlin', 'SQL'],
+    items: ['Java', 'Python', 'Go', 'JavaScript', 'TypeScript'],
   },
   {
-    label: 'Frameworks',
-    items: ['Spring Boot', 'React', 'React Native', 'Tailwind CSS'],
+    label: 'Frameworks & APIs',
+    items: ['Spring Boot', 'React', 'REST', 'gRPC'],
   },
   {
-    label: 'Data & ML',
-    items: ['Pandas', 'Scikit-learn', 'TensorFlow'],
+    label: 'Data',
+    items: ['MySQL', 'Redis', 'Elasticsearch'],
   },
   {
-    label: 'Systems',
-    items: ['Authn/Authz', 'TCP/IP'],
+    label: 'Infrastructure',
+    items: ['API gateways', 'Caching', 'Concurrency', 'Docker', 'Jenkins', 'Git'],
   },
   {
-    label: 'Tooling',
-    items: ['Docker', 'Jenkins', 'Git', 'Firebase', 'Postman', 'JUnit 5'],
+    label: 'Security & networking',
+    items: ['OAuth2', 'JWT', 'RBAC', 'TCP/IP', 'DNS', 'DHCP'],
   },
 ]

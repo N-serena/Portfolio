@@ -28,8 +28,18 @@ export const experience: Experience[] = [
     ],
   },
   {
-    role: 'Undergraduate Researcher',
-    company: 'KSU',
+    role: 'Graduate Researcher',
+    company: 'Boston University, GRS',
+    period: 'Jan 2026 — May 2026',
+    highlights: [
+      'Designed an autonomous evolutionary pipeline that created and optimized visual jailbreak attacks against multimodal LLMs, outperforming hand-crafted baselines with a self-improving system.',
+      'Applied a MAP-Elites strategy to drive in-context optimization across 90+ unattended rounds and thousands of model inferences.',
+      'Achieved an 87.5% training and 90% validation attack success rate against a multimodal LLM (Qwen2-VL-7B).',
+    ],
+  },
+  {
+    role: 'Research Assistant',
+    company: 'KSU — College of Computing',
     period: 'Oct 2024 — May 2025',
     highlights: [        
         'Crafted & executed adversarial attacks (MIFGSM, FGSM) on deep learning models using the MNIST dataset, executing 40+ attack iterations, applying threat modeling techniques to assess model robustness and uncover key vulnerabilities',
@@ -43,7 +53,7 @@ export const experience: Experience[] = [
     period: 'Jun 2023 - Aug 2023',
     highlights: [      
         'Performed threat modeling using the STRIDE methodology to identify and prioritize system vulnerabilities, resulting in the mitigation of 15+ high-priority security risks before deployment.',
-        'Engineered a secure authentication system using OAuth2, JWT, and 2FA in Java for a banking app, achieving 100% compliance with banking regulations and reducing unauthorized access attempts by 70%..',
+        'Engineered a secure authentication system using OAuth2, JWT, and 2FA in Java for a banking app, achieving 100% compliance with banking regulations and reducing unauthorized access attempts by 70%.',
     ],
   },
   {

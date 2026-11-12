@@ -13,7 +13,7 @@ export const profile: Profile = {
   statement: 'I build scalable systems across AI/ML and cloud.',
   summary:
     'Interested in system design, and in the kind of collaboration that makes teams better than the sum of their parts.',
-  location: 'Atlanta, GA',
+  location: 'Boston, MA',
   languages: 'English, French',
   interests: ['Piano', 'Chess', 'Reading', 'Adventure'],
   resumeHref: '/resume.pdf',

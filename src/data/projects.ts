@@ -35,9 +35,16 @@ export const projects: Project[] = [
   //   featured: true,
   // },
   {
+    title: 'Task Mesh',
+    description:
+      'Distributed task mesh built on Redis streams, with a custom dead-letter-queue recovery agent that reprocesses failed tasks and contains state-syncing errors before they cascade.',
+    stack: ['Python', 'Redis', 'Pydantic', 'Gemini'],
+    featured: true,
+  },
+  {
     title: 'FinHub',
     description:
-      'Full-stack platform that securely aggregates and analyses users’ bank data.',
+      'Full-stack finance tracker that aggregates and analyses data from multiple bank accounts into spending insights and budget reports. Integrates the Plaid API over WebClient with secure authentication, improving HTTP request handling efficiency by 10%.',
     stack: ['Spring Boot', 'React', 'MySQL', 'Plaid API'],
     featured: true,
   },

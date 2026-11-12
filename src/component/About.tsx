@@ -13,8 +13,9 @@ const About = () => (
 
     <div className="border-rule mt-8 grid gap-12 border-t pt-10 md:grid-cols-[1.4fr_1fr]">
       <p className="text-ink font-display text-title">
-        Software engineer with a BSc in Computer Science, drawn to system design and to
-        problems that stay interesting after the first solution.
+        Software engineer completing an MS in Computer Science at Boston University,
+        after a BSc at Kennesaw State. Drawn to distributed systems, and to problems that
+        stay interesting after the first solution.
       </p>
 
       <dl className="flex flex-col gap-6">
