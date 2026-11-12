@@ -1,12 +1,12 @@
 import type { Experience } from './types'
 
 /* To add a role, copy this block to the top of the array and edit it.
-   Newest first — the list renders in array order.
+   Newest first - the list renders in array order.
 
    {
      role: 'Software Engineer',
      company: 'Company name',
-     period: 'Jan 2026 — Present',
+     period: 'Jan 2026 - Present',
      companyHref: 'https://example.com',   // optional
      highlights: [
        'What you built, and what changed because of it.',
@@ -30,7 +30,7 @@ export const experience: Experience[] = [
   {
     role: 'Graduate Researcher',
     company: 'Boston University, GRS',
-    period: 'Jan 2026 — May 2026',
+    period: 'Jan 2026 - May 2026',
     links: [
       {
         label: 'Report',
@@ -45,8 +45,8 @@ export const experience: Experience[] = [
   },
   {
     role: 'Research Assistant',
-    company: 'KSU — College of Computing',
-    period: 'Oct 2024 — May 2025',
+    company: 'KSU - College of Computing',
+    period: 'Oct 2024 - May 2025',
     links: [
       {
         label: 'Abstract',
@@ -75,7 +75,7 @@ export const experience: Experience[] = [
   {
     role: 'Software Engineer Intern',
     company: 'PKF Research Center',
-    period: 'Jun 2022 — Oct 2023',
+    period: 'Jun 2022 - Oct 2023',
     highlights: [
       'Built and maintained a REST API for a learning management system in Spring Boot, handling 100+ requests/second and improving data retrieval speed by 25%.',
       'Designed a web-based analytical dashboard with interactive data visualization, supporting data-driven decisions and raising user satisfaction by 30%.',

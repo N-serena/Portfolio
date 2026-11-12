@@ -1,12 +1,12 @@
 /*
- * Builds public/og.png (1200x630) — the card that renders when the site is
+ * Builds public/og.png (1200x630) - the card that renders when the site is
  * shared on LinkedIn, Slack, iMessage etc.
  *
  *   npm run og
  *
  * Content comes from src/data/profile.ts, so the card follows the site.
  * Text is drawn through an SVG using fonts installed on THIS machine, not
- * webfonts — Georgia stands in for Instrument Serif. The PNG is committed,
+ * webfonts - Georgia stands in for Instrument Serif. The PNG is committed,
  * so none of this runs on Vercel.
  */
 import { writeFile } from 'node:fs/promises'

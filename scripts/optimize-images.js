@@ -44,7 +44,7 @@ async function isStale(source, output) {
 
 async function main() {
   if (!existsSync(SOURCE_ROOT)) {
-    console.error(`No ${SOURCE_ROOT}/ directory — nothing to optimize.`)
+    console.error(`No ${SOURCE_ROOT}/ directory - nothing to optimize.`)
     process.exit(1)
   }
 

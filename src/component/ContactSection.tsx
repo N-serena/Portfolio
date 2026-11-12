@@ -86,7 +86,7 @@ const ContactSection = () => {
 
           <p aria-live="polite" className="min-h-5 text-sm">
             {state.succeeded && (
-              <span className="text-ink-muted">Message sent — I&apos;ll reply soon.</span>
+              <span className="text-ink-muted">Message sent - I&apos;ll reply soon.</span>
             )}
             {hasErrors && !state.succeeded && (
               <span className="text-ink">

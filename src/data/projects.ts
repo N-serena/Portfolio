@@ -4,11 +4,12 @@ import dns from '../assets/projects/dns.webp'
 import dsml from '../assets/projects/dsml.webp'
 import mobile from '../assets/projects/mobile.webp'
 import spotify from '../assets/projects/spotify2.webp'
+import taskMesh from '../assets/projects/task_mesh.webp'
 import supplyChain from '../assets/projects/supply_chain.webp'
 
 /* To add a project:
      1. drop the original image in assets-source/projects/
-     2. run `npm run images` — it writes an optimized .webp into src/assets/projects/
+     2. run `npm run images` - it writes an optimized .webp into src/assets/projects/
      3. import that .webp at the top of this file
      4. copy the block below into the array and edit it
 
@@ -37,8 +38,10 @@ export const projects: Project[] = [
   {
     title: 'Task Mesh',
     description:
-      'Distributed task mesh built on Redis streams, with a custom dead-letter-queue recovery agent that reprocesses failed tasks and contains state-syncing errors before they cascade.',
+      'Distributed task processing engine on Redis Streams consumer groups, atomic state hashes and distributed locks. An autonomous recovery agent repairs malformed payloads and schema drift rather than parking failed tasks in the dead-letter queue for manual triage.',
     stack: ['Python', 'Redis', 'Pydantic', 'Gemini'],
+    link: 'https://github.com/N-serena/task-mesh',
+    image: taskMesh,
     featured: true,
   },
   {

@@ -11,7 +11,7 @@ export type SocialLink = {
 export type Profile = {
   name: string
   role: string
-  /** The large second display line in the hero. Keep it short and concrete —
+  /** The large second display line in the hero. Keep it short and concrete -
       it is set at the same size as the name, so vague phrasing shows. */
   statement: string
   /** Smaller supporting sentence under the statement. */
@@ -24,7 +24,7 @@ export type Profile = {
   socials: SocialLink[]
 }
 
-/** A named link to supporting material — a report, poster, paper, write-up. */
+/** A named link to supporting material - a report, poster, paper, write-up. */
 export type ResourceLink = {
   label: string
   href: string
@@ -33,7 +33,7 @@ export type ResourceLink = {
 export type Experience = {
   role: string
   company: string
-  /** Free text, e.g. "Jun 2023 — Aug 2023". Shown as written. */
+  /** Free text, e.g. "Jun 2023 - Aug 2023". Shown as written. */
   period: string
   highlights: string[]
   companyHref?: string

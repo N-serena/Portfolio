@@ -9,8 +9,4 @@ export const certifications: Certification[] = [
     issuer: 'MIT Schwarzman College of Computing',
     link: 'https://www.mygreatlearning.com/eportfolio/serena-noboudem-manda-tchinda',
   },
-  {
-    name: 'Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-  },
 ]

@@ -1,7 +1,7 @@
 import type { Profile } from './types'
 
 /* Edit this file to update the hero and about section.
-   Nothing here is referenced by class name or index — reorder freely.
+   Nothing here is referenced by class name or index - reorder freely.
 
    HEADS UP: name, role, location and statement are also baked into the share
    card at public/og.png. After changing any of them, run `npm run og` or the
@@ -15,7 +15,7 @@ export const profile: Profile = {
     'Interested in system design, and in the kind of collaboration that makes teams better than the sum of their parts.',
   location: 'Boston, MA',
   languages: 'English, French',
-  interests: ['Piano', 'Chess', 'Reading', 'Adventure'],
+  interests: ['Piano', 'Chess', 'Reading'],
   resumeHref: '/resume.pdf',
   socials: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/serena-noboudem' },

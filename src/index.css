@@ -25,7 +25,7 @@
    existing dark: variants never fired. Key it to a class instead. */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Semantic tokens. Components never reference a raw colour — they use the
+/* Semantic tokens. Components never reference a raw colour - they use the
    utilities generated from these, and the values swap under .dark. */
 :root {
   --paper: #fcfbfa;
